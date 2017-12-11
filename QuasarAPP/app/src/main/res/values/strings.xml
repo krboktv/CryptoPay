@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuasarAPP</string>
+    <string name="button_one_text">0</string>
+    <string name="button_first_pair_text">DISPLAY RUB-ETH</string>
+    <string name="button_second_pair_text">DISPLAY RUB-WAV</string>
+    <string name="display_first_pair_text">.</string>
+    <string name="display_second_pair_text">.</string>
+</resources>

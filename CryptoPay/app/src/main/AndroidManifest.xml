@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.qualitylab.evotor.cryptopay">
+
+    <!-- Разрешение на использование сканера штрихкодов -->
+    <uses-permission android:name="ru.evotor.devices.SCANNER_RECEIVER" />
+    <!-- Разрешение на печать своих данных в чеке -->
+    <uses-permission android:name="ru.evotor.permission.receipt.printExtra.SET" />
+    <!-- Разрешение на передачу чека по email или на телефон -->
+    <uses-permission android:name="ru.evotor.permission.receipt.print.INTERNET_RECEIPT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Поддержка сторонней платёжной системы -->
+    <uses-permission android:name="ru.evotor.permission.PAYMENT_SYSTEM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- UUID номер приложения в системе Эвотор. Вкладка APK приложения в ЛК -->
+        <meta-data
+            android:name="app_uuid"
+            android:value="c9ecb8bb-b703-48a1-863c-bffc399768b5" />
+
+        <activity android:name=".MainActivity">
+
+            <!-- Фон, на котором отображается иконка приложения. -->
+            <meta-data
+                android:name="ru.evotor.launcher.BACKGROUND_COLOR"
+                android:value="#133788" />
+
+            <!-- Чтобы заменить кнопку Продажа в интерфейсе терминала -->
+            <intent-filter>
+                <action android:name="ru.evotor.intent.action.SELL_MAIN" />
+
+                <category android:name="android.intent.category.EVOTOR" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Чтобы заменить кнопку Продажа в интерфейсе терминала -->
+            <!--
+                        <intent-filter>
+                            &lt;!&ndash;Иконка приложения на главном экране смарт-терминала&ndash;&gt;
+                            <action android:name="android.intent.action.MAIN" />
+                            <category android:name="android.intent.category.EVOTOR" />
+                        </intent-filter>
+            -->
+        </activity>
+
+        <!-- Получение событий об открытии чека, обновлении базы продуктов или результате изменения чека -->
+
+
+        <!-- Разделение платежей в чеке продажи -->
+
+
+        <!-- Разделение чека продажи на несколько печатных групп -->
+        <!--
+        <service
+            android:name=".SplitGroupService"
+            android:enabled="false"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Разделение платежей в чеке на группы">
+            <intent-filter>
+                <action android:name="evo.v2.receipt.sell.printGroup.REQUIRED" />
+            </intent-filter>
+        </service>
+        -->
+
+
+        <!-- Начисление скидки на чек возврата -->
+        <!-- Печать дополнительной информации в чеке продажи -->
+        <!-- Печать дополнительной информации в чеке возврата -->
+
+
+        <!-- Служба для взаимодействия со сторонними платёжными системами -->
+        <!--
+        <service
+            android:name=".MyPaymentService"
+            android:exported="true"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:label="Другая платежная система">
+            &lt;!&ndash;Цвет кнопки платёжной системы&ndash;&gt;
+            <meta-data
+                android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"
+                android:value="@android:color/holo_green_light" />
+            <meta-data
+                android:name="ru.evotor.paymentSystem.PAYMENT_SYSTEM_ID"
+                android:value="${applicationId}" />
+
+            <intent-filter>
+                <action android:name="evo.v2.receipt.paymentSystem" />
+            </intent-filter>
+        </service>
+        -->
+
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".CreatePaymentActivity"></activity>
+    </application>
+
+</manifest>

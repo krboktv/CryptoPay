@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Landing</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/rega.css">
+    <script src="./node_modules/waves-api/dist/waves-api.min.js"></script>
+    <script type="text/javascript" src="js/serverFunc.js"></script>
+</head>
+
+<body onload="createAddress()">
+  <section class="Email">
+        <div class="container">
+                <div class="row text-center form-mail">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                        <div class="form-wrap">
+                        <h3>Enter your email</h3>
+                            <form role="form"  id="email-form" method="post" action="/kek">
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control  col-xs-12 dfg" placeholder="somebody@example.com">
+                                    <br><br>
+                                        <h3>Ваш Seed</h3>
+                                    <input type="seed" name="seed" id="seed" value="{{getPhrase}}" class="form-control col-xs-12" disabled>
+                                    <br>
+                                    <h3>Ваш Address</h3>
+                                    <input type="address" name="address" id="address" value="{{getAddress}}" class="form-control col-xs-12">
+                                    <br>
+                                    <input type="submit" id="btn-login" class="btn btn-custom btn-md btn-block dfgh" value="Ok">
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!-- /.col-xs-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+                                </div>
+                            </form>
+                            <br>
+                            <hr>
+                        </div>
+                    </div> <!-- /.col-xs-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+  </section>
+
+</section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

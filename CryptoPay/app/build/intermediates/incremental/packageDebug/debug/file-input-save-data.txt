@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Sun Dec 03 04:14:32 MSK 2017
+1.base=/Users/a1/Desktop/HackingMan/CryptoPay/app/build/intermediates/assets/debug
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=/Users/a1/Desktop/HackingMan/CryptoPay/app/build/intermediates/transforms/dexMerger/debug/0
+1.path=ic_launcher.png

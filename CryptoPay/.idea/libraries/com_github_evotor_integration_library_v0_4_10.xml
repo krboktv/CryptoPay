@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.evotor:integration-library-v0.4.10">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/integration-library-v0.4.10.aar/645b42c65feb66ba680874fd5ec291be/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/integration-library-v0.4.10.aar/645b42c65feb66ba680874fd5ec291be/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.evotor/integration-library/v0.4.10/d5ff11ea82b6435ff9308bfeb19d2d0274c6690/integration-library-v0.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
